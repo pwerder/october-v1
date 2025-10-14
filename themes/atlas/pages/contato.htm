@@ -29,41 +29,41 @@ function onContactSubmit()
   </div>
 </section>
 <section class="section">
-    <div id="contact-result" class="container">
-    
-        <form data-request="onContactSubmit" data-request-success="alert('Formulario enviado')">
-            <div class="field">
-              <label class="label">Nombre</label>
-              <div class="control">
-                <input required name="name" class="input" type="text" placeholder="Ingrese su nombre">
-              </div>
-            </div>
-            
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-left">
-                <input required name="email" class="input" type="email" placeholder="Ingrese su correo" value="">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-            
-            <div class="field">
-              <label class="label">Mensaje</label>
-              <div class="control">
-                <textarea required name="message" class="textarea" placeholder="Ingrese un mensaje"></textarea>
-              </div>
-            </div>
-            
-            <div class="field is-grouped">
-              <div class="control">
-                <button type="submit" id="btn-enviar" class="button is-link">Enviar</button>
-              </div>
-              <div class="control">
-                <button type="reset" class="button is-link is-light">Cancelar</button>
-              </div>
-            </div>        
-        </form>
-    </div>
+  <div id="contact-result" class="container">
+  
+    <form data-request="onContactSubmit" data-request-success="alert('Formulario enviado')">
+      <div class="field">
+        <label class="label">Nome</label>
+        <div class="control">
+          <input required name="name" class="input" type="text" placeholder="Digite seu nome">
+        </div>
+      </div>
+        
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input required name="email" class="input" type="email" placeholder="Digite seu email" value="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+        
+      <div class="field">
+        <label class="label">Mensagem</label>
+        <div class="control">
+          <textarea required name="message" class="textarea" placeholder="Digite sua mensagem"></textarea>
+        </div>
+      </div>
+        
+      <div class="field is-grouped">
+        <div class="control">
+          <button type="submit" id="btn-enviar" class="button is-link">Enviar</button>
+        </div>
+        <div class="control">
+          <button type="reset" class="button is-link is-light">Cancelar</button>
+        </div>
+      </div>        
+    </form>
+  </div>
 </section>
