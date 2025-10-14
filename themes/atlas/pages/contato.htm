@@ -3,6 +3,13 @@ url = "/contato"
 layout = "layout"
 is_hidden = 0
 ==
+<?php
+function onStart()
+{
+    $this->addJs('assets/js/contact.js');    
+}
+?>
+==
 <section class="hero is-primary is-bold is-small">
   <div class="hero-body">
     <div class="container">
