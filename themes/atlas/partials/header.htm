@@ -2,7 +2,7 @@
 <div class="container">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
+      <a class="navbar-item" href="{{ '/'|app }}">
         <img src="{{ 'assets/images/logo.png'|theme }}" alt="Logo Teste">
       </a>
       
@@ -19,8 +19,12 @@
         <a class="navbar-item">
           Próximos Eventos
         </a>
+        
+        <a href="{{ 'sobre-nos'|page }}" class="navbar-item">
+          Sobre nós
+        </a>
   
-        <a class="navbar-item">
+        <a href="{{ 'contato'|page }}" class="navbar-item">
           Contato
         </a>
       </div>
