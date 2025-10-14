@@ -3,6 +3,14 @@ url = "/"
 layout = "layout"
 is_hidden = 0
 ==
+<?php
+function onStart()
+{
+    //$this['subtitle'] = 'Sua página de eventos';    
+}
+?>
+==
+{% set subtitle = 'Sua página de eventos...' %}
 <section class="hero is-primary">
 	<div class="hero-body">
 		<div class="container">
@@ -10,7 +18,7 @@ is_hidden = 0
 				Atlas Events
 			</h1>
 			<h2 class="subtitle">
-				Minha pagina de eventos...
+				{{ subtitle }}
 			</h2>
 		</div>
 	</div>
