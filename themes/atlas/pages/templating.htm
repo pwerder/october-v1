@@ -1,0 +1,60 @@
+title = "Templating"
+url = "/templating"
+layout = "layout"
+is_hidden = 0
+==
+<?php
+function onStart()
+{
+    $this['isEarly'] = date('H') >= 9 && date('H') <= 12;
+    $this['fruits'] = ['banana', 'orange', 'apple'];
+}
+?>
+==
+{{ dump() }}
+
+<section class="hero is-primary">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">
+				Templating
+			</h1>
+			<h2 class="subtitle">
+				Exemplo de manipulação de conteudo para visualizar.
+			</h2>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+    <div class="container content">
+        <h3>Exemplos condicionais</h3>
+        <p>
+            {% if isEarly %}
+                Estamos de manha    
+            {% else %}
+                Estamos de tarde
+            {% endif %}
+        </p>
+        
+        <h3>Condicionais abreviados</h3>
+        <p>
+            {{ isEarly ? 'Estamos de manha' : 'Estamos de tarde' }}
+        </p>
+        
+        <h3>Concatenação</h3>
+        <p>
+            {{ 'Estamos de ' ~ (isEarly ? 'manha' : 'tarde') }}
+        </p>
+        
+        <h3>Iterações</h3>
+        <ul>
+            {% for item in fruits %}
+                <li>{{item}}</li>
+            {% else %}
+                <li><em>Sem frutas</em></li>
+            {% endfor %}
+        </ul>
+        
+    </div>
+</section>
