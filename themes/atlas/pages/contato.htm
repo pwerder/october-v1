@@ -6,12 +6,15 @@ is_hidden = 0
 <?php
 function onStart()
 {
-  $this->addJs('assets/js/contact.js');    
+  //$this->addJs('assets/js/contact.js');    
 }
 
 function onContactSubmit()
 {
-  
+  $this['name'] = input('name');
+  /**return [
+    'name' => input('name')
+  ];*/
 }
 
 ?>
@@ -31,7 +34,7 @@ function onContactSubmit()
 <section class="section">
   <div id="contact-result" class="container">
   
-    <form data-request="onContactSubmit" data-request-success="alert('Formulario enviado')">
+    <form data-request="onContactSubmit" data-request-update="'contact/success': '#contact-result'">
       <div class="field">
         <label class="label">Nome</label>
         <div class="control">
@@ -67,3 +70,11 @@ function onContactSubmit()
     </form>
   </div>
 </section>
+
+{% put scripts %}
+<script>
+  function contactSuccess(result) {
+    $('#contact-result').html(`Obrigado <b>${result.name}</b>! Estamos procesando sua informação...`);
+  }
+</script>
+{% endput %}
