@@ -1,0 +1,6 @@
+plugin:
+    name: 'atlas.events::lang.plugin.name'
+    description: 'atlas.events::lang.plugin.description'
+    author: 'Paulo Antonio'
+    icon: oc-icon-calendar
+    homepage: ''
