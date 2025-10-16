@@ -1,0 +1,12 @@
+list: $/atlas/events/models/evento/columns.yaml
+modelClass: Atlas\Events\Models\Evento
+title: Event
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'atlas/events/event/update/:id'

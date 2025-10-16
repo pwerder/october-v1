@@ -1,0 +1,16 @@
+columns:
+    title:
+        label: Titulo
+        type: text
+        searchable: true
+        sortable: true
+        width: 200px
+    description:
+        label: Descrição
+        type: text
+    created_at:
+        label: Criação
+        type: datetime
+    updated_at:
+        label: Atualização
+        type: datetime

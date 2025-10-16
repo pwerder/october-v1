@@ -4,3 +4,17 @@ plugin:
     author: 'Paulo Antonio'
     icon: oc-icon-calendar
     homepage: ''
+navigation:
+    main-menu-item:
+        label: 'atlas.events::lang.plugin.name'
+        url: atlas/events/categoria
+        icon: icon-calendar
+        sideMenu:
+            side-menu-item:
+                label: Categorias
+                url: atlas/events/categoria
+                icon: icon-tag
+            side-menu-item2:
+                label: Events
+                url: atlas/events/event
+                icon: icon-list

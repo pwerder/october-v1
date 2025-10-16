@@ -1,0 +1,10 @@
+name: Categoria
+form: $/atlas/events/models/categoria/fields.yaml
+modelClass: Atlas\Events\Models\Categoria
+defaultRedirect: atlas/events/categoria
+create:
+    redirect: 'atlas/events/categoria/update/:id'
+    redirectClose: atlas/events/categoria
+update:
+    redirect: atlas/events/categoria
+    redirectClose: atlas/events/categoria

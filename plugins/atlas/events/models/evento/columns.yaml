@@ -1,0 +1,22 @@
+columns:
+    title:
+        label: title
+        type: text
+    slug:
+        label: slug
+        type: text
+    description:
+        label: description
+        type: text
+    date:
+        label: date
+        type: text
+    location:
+        label: location
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime

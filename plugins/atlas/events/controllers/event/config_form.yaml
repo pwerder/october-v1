@@ -1,0 +1,10 @@
+name: Event
+form: $/atlas/events/models/evento/fields.yaml
+modelClass: Atlas\Events\Models\Evento
+defaultRedirect: atlas/events/event
+create:
+    redirect: 'atlas/events/event/update/:id'
+    redirectClose: atlas/events/event
+update:
+    redirect: atlas/events/event
+    redirectClose: atlas/events/event

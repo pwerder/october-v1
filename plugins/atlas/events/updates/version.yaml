@@ -1,2 +1,11 @@
 1.0.1:
-    - Initialize plugin.
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table atlas_events_categorias'
+    - builder_table_create_atlas_events_categorias.php
+1.0.3:
+    - 'Updated table atlas_events_categorias'
+    - builder_table_update_atlas_events_categorias.php
+1.0.4:
+    - 'Created table atlas_events_events'
+    - builder_table_create_atlas_events_events.php
