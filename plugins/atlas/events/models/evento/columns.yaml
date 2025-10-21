@@ -1,9 +1,12 @@
 columns:
+    categoria:
+        label: categoria
+        type: text
+        relation: categoria
+        width: 100px
+        valueFrom: title
     title:
         label: title
-        type: text
-    slug:
-        label: slug
         type: text
     description:
         label: description
@@ -17,6 +20,8 @@ columns:
     created_at:
         label: created_at
         type: datetime
+        width: 200px
     updated_at:
         label: updated_at
         type: datetime
+        width: 200px

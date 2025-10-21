@@ -21,8 +21,20 @@ class Categoria extends Model
     public $rules = [
     ];
 
+    public $hasMany = [
+        'evento' => ['Atlas\Events\Models\Evento']
+    ];
+
+
     public function getDisplayNameAttribute()
     {
         return $this->title . ' - ' . $this->description;
+    }
+
+    public function getTotalEventsAttribute()
+    {
+        return $this->evento
+                    ->where('categoria_id', $this->id)
+                    ->count();
     }
 }
