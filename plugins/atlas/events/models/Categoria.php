@@ -20,4 +20,9 @@ class Categoria extends Model
      */
     public $rules = [
     ];
+
+    public function getDisplayNameAttribute()
+    {
+        return $this->title . ' - ' . $this->description;
+    }
 }

@@ -14,7 +14,7 @@ fields:
         type: text
     categoria:
         label: Categoria
-        nameFrom: title
+        nameFrom: display_name
         descriptionFrom: description
         span: full
         required: 1
