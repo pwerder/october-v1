@@ -9,3 +9,12 @@
 1.0.4:
     - 'Created table atlas_events_events'
     - builder_table_create_atlas_events_events.php
+1.0.5:
+    - 'Updated table atlas_events_events'
+    - builder_table_update_atlas_events_events.php
+1.0.6:
+    - 'Updated table atlas_events_events'
+    - builder_table_update_atlas_events_events_2.php
+1.0.7:
+    - 'Updated table atlas_events_events'
+    - builder_table_update_atlas_events_events_3.php

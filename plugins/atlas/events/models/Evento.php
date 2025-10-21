@@ -20,4 +20,12 @@ class Evento extends Model
      */
     public $rules = [
     ];
+
+    public $belongsTo = [
+        'categoria' => 'Atlas\Events\Models\Categoria'
+    ];
+
+    public $attachOne = [
+        'picture' => 'System\Models\File'
+    ];
 }
