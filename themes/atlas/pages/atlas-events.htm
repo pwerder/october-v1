@@ -3,23 +3,40 @@ url = "/"
 layout = "layout"
 is_hidden = 0
 ==
-<?php
+use PauloRibeiro\Slider\Models\Slider;
+
 function onStart()
 {
-    //$this['subtitle'] = 'Sua página de eventos';    
+	$this['gallery'] = Slider::where('code', 'HOME-SLIDER')->first();
 }
-?>
+
 ==
-{% set subtitle = 'Sua página de eventos...' %}
-<section class="hero is-primary">
-	<div class="hero-body">
-		<div class="container">
-			<h1 class="title">
-				Atlas Events
-			</h1>
-			<h2 class="subtitle">
-				{{ subtitle }}
-			</h2>
+
+<div class="single-item">
+	{% for item in gallery.items %}
+		<div class="hero is-dark is-large" style="background: url('{{ item.image|media }}'); background-size: 100%; background-position: center center;">
+			<div class="hero-body container content">
+				<div>
+					<span class="tag is-large is-dark">
+						{{ item.description }}
+					</span>
+				</div>
+				<div>
+					<a class="button is-info" href="{{ item.url }}">Mais detalhe do evento</a>
+				</div>
+			</div>
 		</div>
-	</div>
-</section>
+	{% endfor %}
+</div>
+
+
+{% put styles %}
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+{% endput %}
+
+{% put scripts %}
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$('.single-item').slick();
+	</script>
+{% endput %}
