@@ -1,0 +1,14 @@
+columns:
+    name:
+        label: Nome
+        type: text
+        searchable: true
+    code:
+        label: Code
+        type: text
+        searchable: true
+        width: 220px
+    updated_at:
+        label: Update
+        type: datetime
+        width: 250px

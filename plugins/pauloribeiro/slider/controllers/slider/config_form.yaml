@@ -1,0 +1,10 @@
+name: Slider
+form: $/pauloribeiro/slider/models/slider/fields.yaml
+modelClass: PauloRibeiro\Slider\Models\Slider
+defaultRedirect: pauloribeiro/slider/slider
+create:
+    redirect: 'pauloribeiro/slider/slider/update/:id'
+    redirectClose: pauloribeiro/slider/slider
+update:
+    redirect: pauloribeiro/slider/slider
+    redirectClose: pauloribeiro/slider/slider

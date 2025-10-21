@@ -1,0 +1,11 @@
+plugin:
+    name: 'pauloribeiro.slider::lang.plugin.name'
+    description: 'pauloribeiro.slider::lang.plugin.description'
+    author: 'Paulo Ribeiro'
+    icon: oc-icon-image
+    homepage: ''
+navigation:
+    main-menu-slider:
+        label: 'pauloribeiro.slider::lang.plugin.name'
+        url: pauloribeiro/slider/slider
+        icon: icon-image
