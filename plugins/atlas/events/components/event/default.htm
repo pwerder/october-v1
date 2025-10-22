@@ -1,0 +1,22 @@
+<div class="columns is-multiline">
+    {% for event in result %}
+        <div class="column is-{{columns}}">
+            <div class="card">
+                <div class="card-image">
+                    <a href="{{ event.slug|app }}">                        
+                        <figure class="image">
+                            <img src="{{ event.picture.path }}">
+                        </figure>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <p>{{ event.description }}</p>
+                        <br>
+                        <time>{{ event.date|date('Y-m-d H:i') }}</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
