@@ -1,0 +1,43 @@
+title = "Event"
+url = "/:slug"
+layout = "layout"
+is_hidden = 0
+==
+
+use Atlas\Events\Models\Evento;
+
+function onStart()
+{
+    $slug = $this->param('slug');
+    $this['record'] = Evento::Where('slug', $slug)->first();
+
+    $this->page->title = $this['record']->title;
+    $this->page->description = $this['record']->description;
+
+    $this->setHeaderBackground();
+}
+
+function setHeaderBackground()
+{
+    $category = $this['record']->categoria_id;
+
+    if($category == 2) {
+        $this['background_image'] = 'tech-event.jpg';
+    }
+}
+
+==
+{% partial 'event/header' %}
+
+<section class="section">
+    <div class="container content">
+        <div class="columns">
+            <div class="column">
+                {% partial 'event/content' %}
+            </div>
+            <div class="column is-3">
+                {% partial 'event/form' %}
+            </div>
+        </div>
+    </div>
+</section>
