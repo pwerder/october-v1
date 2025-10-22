@@ -18,3 +18,7 @@ navigation:
                 label: Events
                 url: atlas/events/event
                 icon: icon-list
+            side-menu-subscriber:
+                label: Subscribers
+                url: atlas/events/subscribers
+                icon: icon-user

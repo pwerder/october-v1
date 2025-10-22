@@ -1,0 +1,10 @@
+name: Subscribers
+form: $/atlas/events/models/subscriber/fields.yaml
+modelClass: Atlas\Events\Models\Subscriber
+defaultRedirect: atlas/events/subscribers
+create:
+    redirect: 'atlas/events/subscribers/update/:id'
+    redirectClose: atlas/events/subscribers
+update:
+    redirect: atlas/events/subscribers
+    redirectClose: atlas/events/subscribers

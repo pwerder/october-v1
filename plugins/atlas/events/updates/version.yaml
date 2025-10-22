@@ -18,3 +18,9 @@
 1.0.7:
     - 'Updated table atlas_events_events'
     - builder_table_update_atlas_events_events_3.php
+1.0.8:
+    - 'Created table atlas_events_subscribers'
+    - builder_table_create_atlas_events_subscribers.php
+1.0.9:
+    - 'Updated table atlas_events_subscribers'
+    - builder_table_update_atlas_events_subscribers.php

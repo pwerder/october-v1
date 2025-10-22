@@ -1,0 +1,28 @@
+columns:
+    category:
+        label: Event
+        type: text
+        relation: event
+        valueFrom: title
+        sortable: false
+    name:
+        label: 'Full name'
+        type: text
+        searchable: true
+        width: 200px
+    email:
+        label: Email
+        type: text
+        searchable: true
+        width: 200px
+    document:
+        label: Document
+        type: text
+        searchable: true
+        width: 200px
+    created_at:
+        label: Created
+        type: datetime
+    updated_at:
+        label: Updated
+        type: datetime

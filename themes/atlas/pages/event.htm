@@ -5,6 +5,7 @@ is_hidden = 0
 ==
 
 use Atlas\Events\Models\Evento;
+use Atlas\Events\Models\Subscriber;
 
 function onStart()
 {
@@ -24,6 +25,19 @@ function setHeaderBackground()
     if($category == 2) {
         $this['background_image'] = 'tech-event.jpg';
     }
+}
+
+function onSubscriptionSubmit()
+{
+    $record = new Subscriber();
+
+    $record->event_id = post('event_id');
+    $record->name = post('fullname');
+    $record->document = post('document');
+    $record->email = post('email');
+
+    $record->save();
+
 }
 
 ==
